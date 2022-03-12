@@ -9,15 +9,16 @@ public class KodeBuah
 		int maxNamaBuah = listNamaBuah.Length - 1;
 
 		string namaBuah = "Semangka";
+		string hasilKode = "O00";
 		int kodeBuah = 0;
 		while ((namaBuah == "Semangka") && (kodeBuah < maxNamaBuah))
         {
-			if ((kode == listKodeBuah[kodeBuah]))
+			if ((kode == listNamaBuah[kodeBuah]))
             {
-				namaBuah = listNamaBuah[kodeBuah];
+				hasilKode = listKodeBuah[kodeBuah];
             }
 			kodeBuah++;
         }
-		return namaBuah;
+		return hasilKode;
 	}
 }
